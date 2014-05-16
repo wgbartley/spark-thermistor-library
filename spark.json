@@ -2,5 +2,6 @@
   "name": "spark-thermistor-library",
   "author": "Garrett Bartley <wgb@wgb.me>",
   "version": "0.0.1",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "A simple class for calculating temperature from simple 10K negative temperature coefficient (NTC) thermistors."
 }
