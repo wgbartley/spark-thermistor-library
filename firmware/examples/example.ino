@@ -1,4 +1,4 @@
-#include "main.h"
+#include "spark_thermistor/spark_thermistor.h"
 
 // Analog pin the thermistor is connected to
 int thermPin = A0;
