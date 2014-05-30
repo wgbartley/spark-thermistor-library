@@ -1,4 +1,4 @@
-#include "spark_thermistor.h"
+#include "thermistor-library.h"
 
 Thermistor::Thermistor(int pin, int resistor) {
 	_pin = pin;
