@@ -11,7 +11,7 @@ void Thermistor::begin(void) {
 }
 
 
-int Thermistor::getTempRaw(bool smooth=false) {
+int Thermistor::getTempRaw(bool smooth) {
 	delay(1);
 	
 	if(smooth==true) {
@@ -30,7 +30,7 @@ int Thermistor::getTempRaw(bool smooth=false) {
 }
 
 
-float Thermistor::getTempK(bool smooth=false) {
+float Thermistor::getTempK(bool smooth) {
 	_temp_raw = getTempRaw(smooth);
 
 	_temp_k = log(((40960000/_temp_raw) - _resistor));
