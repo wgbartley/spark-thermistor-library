@@ -13,9 +13,9 @@ class Thermistor {
 	public:
 		Thermistor(int pin, int resistor);
 		void begin(void);
-		float getTemp(bool smooth);
-		float getTempF(bool smooth);
-		float getTempC(bool smooth);
-		float getTempK(bool smooth);
-		int getTempRaw(bool smooth);
+		float getTemp(bool smooth=false);
+		float getTempF(bool smooth=false);
+		float getTempC(bool smooth=false);
+		float getTempK(bool smooth=false);
+		int getTempRaw(bool smooth=false);
 };
