@@ -40,7 +40,7 @@ float Thermistor::getTempK(bool smooth=false) {
 }
 
 
-float Thermistor::getTempC(bool smooth=false) {
+float Thermistor::getTempC(bool smooth) {
 	_temp_k = getTempK(smooth);
 	
 	_temp_c = _temp_k - 273.15;
@@ -49,7 +49,7 @@ float Thermistor::getTempC(bool smooth=false) {
 }
 
 
-float Thermistor::getTempF(bool smooth=false) {
+float Thermistor::getTempF(bool smooth) {
 	_temp_c = getTempC(smooth);
 	
 	_temp_f = (_temp_c * 9.0)/ 5.0 + 32.0;
@@ -58,6 +58,6 @@ float Thermistor::getTempF(bool smooth=false) {
 }
 
 
-float Thermistor::getTemp(bool smooth=false) {
+float Thermistor::getTemp(bool smooth) {
 	return getTempC(smooth);
 }
